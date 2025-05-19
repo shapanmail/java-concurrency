@@ -51,7 +51,7 @@ To grasp this issue, we need to understand how Java memory management works:
 - Each thread operates **within its own CPU core** and may **cache** values instead of reading them from RAM **immediately**.
 - **Without `volatile`**, there is **no guarantee** that one thread sees changes made by another thread instantly.
 
-Refer to [🔗 Java Memory Model Explained](https://shipilev.net/blog/2014/jmm-pragmatics/) for details on java memory model.
+Refer to [🔗 Java Memory Model Explained](https://jenkov.com/tutorials/java-concurrency/java-memory-model.html) for details on java memory model.
 
 ---
 
@@ -177,4 +177,4 @@ These concepts will be covered in detail in another post.
 
 ### Additional Resources
 For a **visual representation** of the Java Memory Model, check out:
-[🔗 Java Memory Model Explained](https://shipilev.net/blog/2014/jmm-pragmatics/)
+[🔗 Java Memory Model Explained](https://jenkov.com/tutorials/java-concurrency/java-memory-model.html)
