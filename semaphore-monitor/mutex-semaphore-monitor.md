@@ -172,7 +172,7 @@ public class ConnectionPool {
 
 ## Comparing the Constructs
 
-| Feature               | Mutex (Synchronized Block)                             | Monitor (Intrinsic or ReentrantLock + Condition)   | Semaphore                                           |
+| Feature               | Mutex (Synchronized/Reentrant)                             | Monitor (Intrinsic or ReentrantLock + Condition)   | Semaphore                                           |
 |-----------------------|-------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|
 | **Primary Use-Case**  | Ensuring exclusive access to a shared resource         | Coordinating access with waiting and signaling       | Limiting concurrent access to a collection of resources; also used for thread signaling |
 | **Ownership**         | Enforced; the thread that locks must release it        | Enforced for intrinsic monitors; explicit with ReentrantLock | Not enforced; permits can be acquired and released by different threads |
